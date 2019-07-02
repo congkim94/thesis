@@ -1,3 +1,4 @@
+
 (function() {
     var hamburger = {
         navToggle: document.querySelector('.menu-toggle'),
@@ -8,14 +9,13 @@
             this.nav.classList.toggle('active');
         }
     };
+        hamburger.nav.addEventListener('click', function(e) {
+        hamburger.doToggle(e);
+    });
     hamburger.navToggle.addEventListener('click', function(e) {
         hamburger.doToggle(e);
     });
-    hamburger.nav.addEventListener('click', function(e) {
-        hamburger.doToggle(e);
-    });
+
 }());
-
-
 
 
